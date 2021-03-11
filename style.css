@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #262622;
+}
+.numbers{
+    text-align: center;
+    margin-top: 80px;
+}
+.numbers input{
+    width: 200px;
+    height: 50px;
+    outline: none;
+    border-radius: 50px;
+    padding:0 20px 0 20px;
+    border: 2px solid yellowgreen;
+    background: none;
+    color: yellowgreen;
+    transition: all ease .4s
+}
+.numbers input:first-child{
+    margin-right: 20px;
+}
+.operators{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 2rem;
+    margin-top: 30px;
+}
+.operators button{
+    color: yellowgreen;
+    background: none;
+    outline: none;
+    border: 2px solid yellowgreen;
+    border-radius: 10px;
+    width: 46px;
+    height: 46px;
+    transition: all ease .4s; 
+    font-size: 1rem;
+}
+.operators button:hover{
+    transform: translateY(-8px);
+    border-color: #8E44AD;
+    color: #fff;
+    box-shadow: 0px 10px 10px #000;
+    background: #8E44AD;
+}
+.numbers input:hover{
+    border-color: #8E44AD;
+    color: #f1f1f1;
+}
+.answer{
+    text-align: center;
+    margin-top: 30px;
+}
+#answerplace{
+    text-align: center;
+    color: yellowgreen;
+}
+@media screen and (max-width: 600px){
+    .numbers{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .numbers input:first-child{
+        margin: 0 0 10px 0;
+    }
+}

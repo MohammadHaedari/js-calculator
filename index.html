@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="img/icon.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>JavaScript Calculator</title>
+</head>
+<body>
+    <div class="numbers">
+        <center>
+        <input id="firstnumber" type="number" placeholder="First Number">
+        <input id="secondnumber" type="number" placeholder="Second Number">
+        </center>
+    </div>
+    <center>
+    <div class="operators">
+        <button onclick="adds();">+</button>
+        <button onclick="subtracts();">-</button>
+        <button onclick="multiplies();">×</button>
+        <button onclick="divides();">÷</button>
+    </div>
+    </center>
+    <div class="answer">
+        <p id="answerplace"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
