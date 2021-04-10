@@ -1,24 +1,30 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: monospace
 }
 body{
-    background-color: #262622;
+    background-color: #262626;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-top: 100px;
 }
 .numbers{
     text-align: center;
     margin-top: 80px;
 }
 .numbers input{
-    width: 200px;
+    width: 220px;
     height: 50px;
     outline: none;
-    border-radius: 50px;
+    border-radius: 20px;
     padding:0 20px 0 20px;
-    border: 2px solid yellowgreen;
+    border: 2px solid #1ABC9C;
     background: none;
-    color: yellowgreen;
-    transition: all ease .4s
+    color: #1ABC9C;
+    transition: all ease .3s
 }
 .numbers input:first-child{
     margin-right: 20px;
@@ -31,28 +37,29 @@ body{
     align-items: center;
     align-content: center;
     gap: 2rem;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 .operators button{
-    color: yellowgreen;
+    color: #1ABC9C;
     background: none;
     outline: none;
-    border: 2px solid yellowgreen;
-    border-radius: 10px;
+    border: 2px solid #1ABC9C;
+    border-radius: 13px;
     width: 46px;
     height: 46px;
-    transition: all ease .4s; 
+    transition: all ease .3s; 
     font-size: 1rem;
+    box-shadow: 0px 5px 16px #000;
 }
 .operators button:hover{
-    transform: translateY(-8px);
-    border-color: #8E44AD;
+    border-color: #1ABC9C;
     color: #fff;
-    box-shadow: 0px 10px 10px #000;
-    background: #8E44AD;
+    background: #1ABC9C;
+    transform: translateY(3px);
+    box-shadow: 0px 0px 0px #000;
 }
 .numbers input:hover{
-    border-color: #8E44AD;
+    border-color: #1ABC9C;
     color: #f1f1f1;
 }
 .answer{
@@ -61,7 +68,7 @@ body{
 }
 #answerplace{
     text-align: center;
-    color: yellowgreen;
+    color: #1ABC9C;
 }
 @media screen and (max-width: 600px){
     .numbers{
